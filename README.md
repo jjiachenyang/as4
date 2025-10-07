@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>地下到舞台的旅程</title>
 
-  <!-- Google Fonts 字體 -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -44,6 +43,7 @@
       font-size: 1.05rem;
     }
 
+    /* Banner */
     .banner {
       position: relative;
       height: 100vh;
@@ -52,42 +52,44 @@
 
     .banner h1 {
       position: absolute;
-      bottom: 20px;
-      right: 30px;
+      bottom: 40px;
+      right: 50px;
       font-size: 1.8rem;
       background: rgba(0, 0, 0, 0.5);
-      padding: 8px 16px;
+      padding: 10px 20px;
       border-radius: 8px;
       letter-spacing: 2px;
       font-weight: 500;
     }
 
-    /* 結尾頁面樣式 */
+    /* 結尾說明 */
     .ending-section {
       height: 100vh;
       width: 100%;
-      background-color: #2f2f2f; /* 鐵灰色 */
+      background-color: #4a4a4a; /* 鐵灰色 */
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 50px 10%;
-    }
-
-    .ending-section .content {
-      max-width: 900px;
-      color: white;
-      font-family: "Noto Serif TC", serif;
-      line-height: 1.8;
-      font-size: 1.05rem;
       text-align: center;
+      padding: 40px;
+      box-sizing: border-box;
     }
 
-    .ending-section h1 {
-      margin-bottom: 30px;
+    .ending-section .content h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
-    .ending-section h2 {
-      margin-top: 30px;
+    .ending-section .content h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ending-section .content p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
     }
   </style>
 </head>
@@ -139,7 +141,7 @@
   <section class="ending-section">
     <div class="content">
       <h1>圖片生成與製作過程說明</h1>
-      <p>本網頁先透過 <strong>ChatGPT</strong> 生成故事大綱與章節，向 ChatGPT 提出圖片設計要求，請它翻成英文指令，再到 <strong>nano banana</strong> 上生成圖片。（中間也有嘗試用Gemini生成圖片，但無法製作出想像中的圖片）</p>
+      <p>本網頁先透過 <strong>ChatGPT</strong> 生成故事大綱與章節，向 ChatGPT 提出圖片設計要求，請它翻成英文指令，再到 <strong>nano banana</strong> 上生成圖片。</p>
       <h2>故事大綱（第一道指令）</h2>
       <p>我想設計一個故事，關於一個地下樂團（名字隨便你取）從默默無名因為努力練團最後登上音樂祭圓夢的故事，可以先幫我生成一個四段文字構成的故事嗎（待會再以四段故事設計圖片）</p>
       <h2>圖片設計（第一道指令）</h2>
