@@ -15,33 +15,65 @@
       box-sizing: border-box;
     }
 
+    /* 強制覆蓋 GitHub Pages 預設樣式 */
     html, body {
-      width: 100%;
+      width: 100% !important;
+      max-width: 100% !important;
       height: 100%;
       font-family: "Noto Serif TC", serif;
       color: white;
       overflow-x: hidden;
       background-color: black;
+      position: relative;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
-    /* Sticky Sections */
+    /* 移除可能的容器樣式 */
+    .container, .container-lg, .markdown-body {
+      max-width: 100% !important;
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* 隱藏 GitHub Pages 自動生成的標題和分隔線 */
+    header, .page-header {
+      display: none !important;
+    }
+    
+    body > h1:first-child, h1.project-name {
+      display: none !important;
+    }
+    
+    hr:first-of-type {
+      display: none !important;
+    }
+
+    /* Sticky Section */
     section {
       height: 300vh;
       position: relative;
-      width: 100%;
-      margin: 0;
-      padding: 0;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .sticky {
+      position: -webkit-sticky;
       position: sticky;
       top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
+      overflow: hidden;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .text-block {
@@ -64,6 +96,9 @@
       width: 100vw;
       height: 100vh;
       background: url("https://raw.githubusercontent.com/jjiachenyang/as4/main/image/photo5.jpg") center center/cover no-repeat;
+      overflow: hidden;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .banner h1 {
@@ -79,7 +114,7 @@
       z-index: 10;
     }
 
-    /* Ending Section */
+    /* 結尾說明 */
     .ending-section {
       height: 100vh;
       width: 100vw;
@@ -90,6 +125,7 @@
       text-align: center;
       padding: 40px;
       overflow: hidden;
+      margin: 0 !important;
     }
 
     .ending-section .content {
@@ -120,7 +156,7 @@
       cursor: default;
     }
 
-    /* Responsive */
+    /* 響應式設計 */
     @media (max-width: 768px) {
       .text-block {
         max-width: 85%;
@@ -147,8 +183,10 @@
         font-size: 0.95rem;
       }
     }
+
   </style>
 </head>
+
 <body>
 
   <!-- Banner -->
@@ -196,7 +234,7 @@
   <section class="ending-section">
     <div class="content">
       <h1>圖片生成與製作過程說明</h1>
-      <p>本網頁先透過 <strong>ChatGPT</strong> 生成故事大綱與章節，向 ChatGPT 提出圖片設計要求，請它翻成英文指令，再到 <strong>nano banana</strong> 上生成圖片。</p>
+      <p>本網頁先透過 ChatGPT 生成故事大綱與章節，向 ChatGPT 提出圖片設計要求，請它翻成英文指令，再到 nano banana 上生成圖片。</p>
       <p>故事大綱：我想設計一個故事，關於一個地下樂團從默默無名到努力練團最後登上音樂祭的過程。</p>
       <p>圖片生成工具：使用 nano banana AI 圖片生成平台，根據英文提示詞生成了場景圖片。</p>
       <p>網頁製作：使用純 HTML + CSS 實現視差滾動效果，透過 sticky positioning 讓圖片固定在畫面上，配合文字區塊營造沉浸式閱讀體驗。</p>
