@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
@@ -43,7 +42,7 @@
       display: none !important;
     }
     
-    h1:first-of-type, h1.project-name {
+    body > h1:first-child, h1.project-name {
       display: none !important;
     }
     
