@@ -22,36 +22,42 @@
       color: white;
       overflow-x: hidden;
       background-color: black;
+      position: relative;
     }
 
+    /* Sticky Section */
     section {
       height: 300vh;
       position: relative;
-      width: 100vw;
+      width: 100%;
     }
 
     .sticky {
+      position: -webkit-sticky;
       position: sticky;
       top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
-      background-position: center;
+      background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
+      overflow: hidden;
     }
 
     .text-block {
       position: absolute;
+      top: 20%;
       right: 5%;
-      top: 30%;
-      width: 32%;
+      max-width: 32%;
       background: rgba(0,0,0,0.55);
-      color: white;
-      padding: 24px;
+      padding: 20px;
       border-radius: 12px;
-      line-height: 1.9;
+      line-height: 1.7;
       font-size: 1.05rem;
+      color: white;
+      z-index: 10;
     }
 
     /* Banner */
@@ -59,8 +65,8 @@
       position: relative;
       width: 100vw;
       height: 100vh;
-      background: url("https://raw.githubusercontent.com/jjiachenyang/as4/main/image/photo5.jpg") center/cover no-repeat;
-      display: block;
+      background: url("https://raw.githubusercontent.com/jjiachenyang/as4/main/image/photo5.jpg") center center/cover no-repeat;
+      overflow: hidden;
     }
 
     .banner h1 {
@@ -73,18 +79,25 @@
       border-radius: 8px;
       letter-spacing: 2px;
       font-weight: 500;
+      z-index: 10;
     }
 
     /* 結尾說明 */
     .ending-section {
       height: 100vh;
       width: 100vw;
-      background-color: #4a4a4a; /* 鐵灰色 */
+      background-color: #4a4a4a;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 40px;
+      overflow: hidden;
+    }
+
+    .ending-section .content {
+      max-width: 900px;
+      width: 100%;
     }
 
     .ending-section .content h1 {
@@ -109,8 +122,38 @@
       text-decoration: none;
       cursor: default;
     }
+
+    /* 響應式設計 */
+    @media (max-width: 768px) {
+      .text-block {
+        max-width: 85%;
+        right: 7.5%;
+        font-size: 0.95rem;
+        padding: 15px;
+      }
+
+      .banner h1 {
+        font-size: 1.4rem;
+        right: 20px;
+        bottom: 30px;
+      }
+
+      .ending-section .content h1 {
+        font-size: 1.5rem;
+      }
+
+      .ending-section .content h2 {
+        font-size: 1.2rem;
+      }
+
+      .ending-section .content p {
+        font-size: 0.95rem;
+      }
+    }
+
   </style>
 </head>
+
 <body>
 
   <!-- Banner -->
@@ -157,12 +200,14 @@
   <!-- 結尾說明 -->
   <section class="ending-section">
     <div class="content">
-      <h1>圖片生成與故事設計過程</h1>
+      <h1>圖片生成與製作過程說明</h1>
       <p>本網頁先透過 <strong>ChatGPT</strong> 生成故事大綱與章節，向 ChatGPT 提出圖片設計要求，請它翻成英文指令，再到 <strong>nano banana</strong> 上生成圖片。</p>
-      <h2>故事大綱（第一道指令）</h2>
-      <p>我想設計一個故事，關於一個地下樂團（名字隨便你取）從默默無名因為努力練團最後登上音樂祭圓夢的故事，可以先幫我生成一個四段文字構成的故事嗎（待會再以四段故事設計圖片）</p>
-      <h2>圖片設計（第一道指令）</h2>
-      <p>我要用 <strong>nano banana</strong> 生成四張圖片，我希望風格是像日本漫畫一樣，線條感明顯、有張力。</p>
+      <h2>故事大綱</h2>
+      <p>我想設計一個故事，關於一個地下樂團從默默無名到努力練團最後登上音樂祭的過程。</p>
+      <h2>圖片生成工具</h2>
+      <p>使用 <strong>nano banana</strong> AI 圖片生成平台，根據英文提示詞生成了場景圖片。</p>
+      <h2>網頁製作</h2>
+      <p>使用純 HTML + CSS 實現視差滾動效果，透過 sticky positioning 讓圖片固定在畫面上，配合文字區塊營造沉浸式閱讀體驗。</p>
     </div>
   </section>
 
