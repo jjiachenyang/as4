@@ -8,8 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    /* Reset */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
       font-family: "Noto Serif TC", serif;
       color: white;
       overflow-x: hidden;
@@ -19,15 +27,17 @@
     section {
       height: 300vh;
       position: relative;
+      width: 100vw;
     }
 
     .sticky {
       position: sticky;
       top: 0;
+      width: 100vw;
+      height: 100vh;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      height: 100vh;
     }
 
     .text-block {
@@ -46,6 +56,7 @@
     /* Banner */
     .banner {
       position: relative;
+      width: 100vw;
       height: 100vh;
       background: url("https://raw.githubusercontent.com/jjiachenyang/as4/main/image/photo5.jpg") center/cover no-repeat;
     }
@@ -65,14 +76,13 @@
     /* 結尾說明 */
     .ending-section {
       height: 100vh;
-      width: 100%;
+      width: 100vw;
       background-color: #4a4a4a; /* 鐵灰色 */
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 40px;
-      box-sizing: border-box;
     }
 
     .ending-section .content h1 {
@@ -90,6 +100,13 @@
       font-size: 1.05rem;
       line-height: 1.8;
       margin-bottom: 15px;
+    }
+
+    /* 取消超連結效果 */
+    .ending-section .content strong {
+      color: inherit;
+      text-decoration: none;
+      cursor: default;
     }
   </style>
 </head>
