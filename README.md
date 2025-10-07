@@ -1,45 +1,12 @@
-<html lang="en-US"><head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>as4</title>
-<meta name="generator" content="Jekyll v3.10.0">
-<meta property="og:title" content="as4">
-<meta property="og:locale" content="en_US">
-<link rel="canonical" href="https://jjiachenyang.github.io/as4/">
-<meta property="og:url" content="https://jjiachenyang.github.io/as4/">
-<meta property="og:site_name" content="as4">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="as4">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"as4","name":"as4","url":"https://jjiachenyang.github.io/as4/"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/as4/assets/css/style.css?v=a074806716dbdfc6a22c9b256183d57048f7c42f">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/as4/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-    
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>地下到舞台的旅程</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     /* Reset */
@@ -69,6 +36,19 @@
       width: 100% !important;
       padding: 0 !important;
       margin: 0 !important;
+    }
+
+    /* 隱藏 GitHub Pages 自動生成的標題和分隔線 */
+    header, .page-header {
+      display: none !important;
+    }
+    
+    h1:first-of-type, h1.project-name {
+      display: none !important;
+    }
+    
+    hr:first-of-type {
+      display: none !important;
     }
 
     /* Sticky Section */
@@ -206,9 +186,9 @@
     }
 
   </style>
+</head>
 
-
-
+<body>
 
   <!-- Banner -->
   <div class="banner">
@@ -262,14 +242,5 @@
     </div>
   </section>
 
-
-
-
-
-      
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  
-
-</body></html>
+</body>
+</html>
