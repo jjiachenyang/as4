@@ -38,6 +38,7 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      display: block;
     }
 
     .text-block {
@@ -45,7 +46,7 @@
       right: 5%;
       top: 30%;
       width: 32%;
-      background: rgba(0, 0, 0, 0.55);
+      background: rgba(0,0,0,0.55);
       color: white;
       padding: 24px;
       border-radius: 12px;
@@ -59,6 +60,7 @@
       width: 100vw;
       height: 100vh;
       background: url("https://raw.githubusercontent.com/jjiachenyang/as4/main/image/photo5.jpg") center/cover no-repeat;
+      display: block;
     }
 
     .banner h1 {
@@ -66,7 +68,7 @@
       bottom: 40px;
       right: 50px;
       font-size: 1.8rem;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0,0,0,0.5);
       padding: 10px 20px;
       border-radius: 8px;
       letter-spacing: 2px;
@@ -102,7 +104,6 @@
       margin-bottom: 15px;
     }
 
-    /* 取消超連結效果 */
     .ending-section .content strong {
       color: inherit;
       text-decoration: none;
@@ -110,7 +111,6 @@
     }
   </style>
 </head>
-
 <body>
 
   <!-- Banner -->
@@ -157,7 +157,7 @@
   <!-- 結尾說明 -->
   <section class="ending-section">
     <div class="content">
-      <h1>圖片生成與製作過程說明</h1>
+      <h1>圖片生成與故事設計過程</h1>
       <p>本網頁先透過 <strong>ChatGPT</strong> 生成故事大綱與章節，向 ChatGPT 提出圖片設計要求，請它翻成英文指令，再到 <strong>nano banana</strong> 上生成圖片。</p>
       <h2>故事大綱（第一道指令）</h2>
       <p>我想設計一個故事，關於一個地下樂團（名字隨便你取）從默默無名因為努力練團最後登上音樂祭圓夢的故事，可以先幫我生成一個四段文字構成的故事嗎（待會再以四段故事設計圖片）</p>
